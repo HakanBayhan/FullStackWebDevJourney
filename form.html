@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Page</title>
+  </head>
+  <body>
+    <section>
+    <hr>
+      <div>
+        <h1>Sign In</h1>
+        <form action="chickens.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <br>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+    <hr>
+    </section>
+
+    <section>
+        <h2>Search Engines</h2>
+        <div>
+        <h3>Youtube Search</h3>
+        <form action="https://www.youtube.com/results">
+        <label for="search"></label>
+        <input type="text" id="search" name="search_query"/>
+        <button>Search</button>
+        </form>
+        </div>
+
+        <div>
+            <h3>MDB Movie Search</h3>
+            <form action="https://www.imdb.com/find/">
+            <input type="text" name="q">
+            <button>Search Movie</button>
+            </form>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+                <h3>Radiobtn Form-Fruits</h3>
+                <div>
+                    <form>
+                    <ul>
+                    <li><label for="orangebtn">Orange</label>
+                    <input type="radio" name="orange" value="orangerdbtn" id="orangebtn"/><br></li>
+                    <li><label for="applebtn">Apple</label>
+                    <input type="radio" name="apple" value="applebtn" id="applebtn"/><br></li>
+                    <li><label for="strawberrybtn">Strawberry</label>
+                    <input type="radio" name="strawberry" value="strawberrybtn" id="strawberrybtn"/><br></li>    
+                    <button>Submit</button>
+                    </ul>
+
+                    </form>
+                </div>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>DropDown form</h3>
+        <div>
+            <form>
+                <label for="game-selector">--Please choose a game--</label>
+                <select name="game-selecter" id="game-selector">
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="tennis">Tennis</option>
+                </select><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div>
+            <form>
+            <h2>Form Range İnput Type</h2>
+            <label for="stress_level">Amount of stress</label>
+            <input type="range" min="0" max="100" value="20" name="stress" id="stress_level"/>
+            <button type="reset">reset</button>
+            <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </section>
+  </body>
+</html>
