@@ -1,0 +1,38 @@
+button {
+  background-color: #43334c;
+  color: white;
+}
+
+p {
+  background-color: #ff8fb7;
+  color: #43334c;
+}
+input[type="text"] {
+  background-color: #ff8fb7;
+  color: #43334c;
+}
+body {
+  background-color: #f8f4ec;
+}
+h1 {
+  text-align: center;
+  color: rgb(67, 51, 76);
+  font-weight: 700;
+  text-decoration: underline #ff00ff dashed;
+  font-family: monospace;
+}
+h2 {
+  color: #43334c;
+  line-height: 2;
+  letter-spacing: 10px;
+  font-size: large;
+  font-family: monospace;
+}
+#button1 {
+  background-color: #ff8fb7;
+  color: #43334c;
+}
+.d4 {
+  font-size: 25px;
+  color: #ff8fb7;
+}
