@@ -1,26 +1,12 @@
+body {
+  background-color: #f8f4ec;
+}
+
 button {
   background-color: #43334c;
   color: white;
 }
 
-p {
-  background-color: #ff8fb7;
-  color: #43334c;
-}
-input[type="text"] {
-  background-color: #ff8fb7;
-  color: #43334c;
-}
-body {
-  background-color: #f8f4ec;
-}
-h1 {
-  text-align: center;
-  color: rgb(67, 51, 76);
-  font-weight: 700;
-  text-decoration: underline #ff00ff dashed;
-  font-family: monospace;
-}
 h2 {
   color: #43334c;
   line-height: 2;
@@ -28,11 +14,51 @@ h2 {
   font-size: large;
   font-family: monospace;
 }
-#button1 {
+
+p {
   background-color: #ff8fb7;
   color: #43334c;
 }
+
+h1 {
+  text-align: center;
+  color: rgb(67, 51, 76);
+  font-weight: 700;
+  text-decoration: underline #ff00ff dashed;
+  font-family: monospace;
+}
+
+input[type="text"] {
+  background-color: #ff8fb7;
+  color: #43334c;
+}
+
+a:hover {
+  color: #ff00ff;
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+  text-decoration: wavy underline;
+}
+
 .d4 {
   font-size: 25px;
   color: #ff8fb7;
+}
+li a {
+  color: blue;
+}
+#dislike a :hover {
+  color: blue;
+}
+
+p#dislike a {
+  color: red;
+  font-weight: bold;
+}
+#button1 {
+  background-color: #ff8fb7;
+  color: #43334c;
 }
