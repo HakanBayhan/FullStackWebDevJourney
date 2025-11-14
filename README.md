@@ -39,7 +39,7 @@ Sayfa tasarımlarından bahsettik Sementic Markup adı altında anlattı 2 sayfa
 
 Element oluşturmanın short cutlarından bahsettik.shortcutların olduğu site de burası öğrenmek işe yarayabilir.https://docs.emmet.io/cheat-sheet/
 
-**Section 5:HTML:Forms & Tables**
+### **Section 5:HTML:Forms & Tables**
 
 Table’lardan bahsettik.Formlardan bahsettik mantıklarını kavradık öncelikle.
 
@@ -93,7 +93,7 @@ input type ‘da radio button’a baktık ve eğer radio button’da hangi radio
 `<input type=”radio” name=”xxl” value=”xxlrdbtn”>`
 value girmek name atamak kadar önemli aksi taktirde server hangi radiobutton’ın checked olduğunu anlamlandıramaz.
 
-**CSS**
+# **6.CSS**
 
 Öncelikle netleştirdiği bir şeye değineceğim CSS çok geniş bir alan o yüzden de bütün CSS özelliklerini bilmek imkansız gibi bir şey bundan dolayı da kullanmak istediğimiz özellikleri her zaman bilmek değil araştırmak zorundayız.Dediğim gibi bütün özellikleri bilmek önemli değil önemli olan doğru kullanımlarını bilmek.
 
@@ -140,6 +140,8 @@ h2 {
   dahil oluyor-->
 }
 ```
+
+### 7.The World Of CSS Selectors
 
 **Id selector:**
 
@@ -299,3 +301,75 @@ Important diye bir değişeknden bahsetti ama kullanmanın mantıklı olmadığ�
 `}`
 
 yine dediğim gibi kullanabilirim bunu ancak mantıklı ve çok işe yarayan ya da kullanılan bir şey değil.
+
+**Inherit:**
+
+inherit diye bir şey var ve işlevi bir child elemente atanan terime inherit eklendiğinde kendisine en yakın parent style’ı alması.şöyle göstereyim:
+
+`body{`
+
+`color:orange;`
+
+`}`
+
+`form{`
+
+`color:blue;`
+
+`}`
+
+`button{`
+
+`color:inherit;`
+
+`}`
+
+Normalde burada 3 tane renk ataması var ve üçü de button elementinin parentı ama button a inherit eklediğimiz için form elementinin blue olan color’ını alıcak.
+
+Eğer form elementinin css style’ını kaldırmış olsaydık body elementinin orage olan rengini alıcaktı.
+
+Tabi bütün elementler inherit hale getirilemiyor örneğin burada color’ı kullandık ama başka elementlerde inherit özelliğini kullanamayabiliyoruz.
+
+## 8.The CSS Box Model
+
+**Width & height:**
+
+Oluşturduğumuz elementlerin site üzerinde yarattıkları alan üzerinde değişiklilik yapmadığımız durumda daha yüksek oluyor.Küçük bir inline element kullandığımızı düşünelim bir line’ın tamamını kullanıyor olmasına rağmen bizim ona atadığımız değer çok küçük.Bunu düzeltmek için elementin width and height değerlerini değiştiriyoruz.
+
+**Border & Border-Radius**:
+
+elementlerimizi bir çevrelemek için border kullanıyoruz.
+
+Border width: border’ın kalınlığını(genişliğini) değiştiriyoruz.
+
+Border color: border’ın rengini değiştiriyoruz.
+
+Border style:border’ın şeklini değiştiriyoruz(kare-yuvarlak gibi).
+
+Border-radius:border’ın kenarlarının görünüşünü değiştiriyoruz.
+
+`box-sizing: border-box;` bu kod da box-sizingden geliyor bunun amacı
+
+padding:pedding içerideki kontent ile dışarıdaki duvar arasındaki boşluk.
+
+margin:dışarıdaki duvar ile başka bir kontentin bulunduğu duvar arasındaki boşluk.
+
+**The Display Property:**
+
+Inline:block elementi inline gibi davrandırıyoruz.
+
+Block:inline elementi block gibi davrandırıyoruz.
+
+Inline-Block:Block elementleri inline davrandırıyor.
+
+**Percentage nasıl çalışır:**
+
+elemente atanan % değer parent elementin px değerinin yüzdeliği olarak hesap edilir.Örneğin h1 altına a koyuyorum. h1 90px ve a %20 o zaman a 18 px olur.
+
+**em nasıl çalışır:**
+
+Tıpkı **Percentage** gibi ama em farklı çalışıyor.em parent elementinin büyüklüğünün em’e verilen değere çarpımı ile ölçülüyor.örneğin:`<h1><a></a></h1>` gibi bir durum va elimizde h1 in 100px değeri var ve biz de a’ya 2em değer veriyoruz bu durumda a’nın px değeri 200 oluyor.Yine benzer bir örnekle 0.8 ile çarparsak 80px elde ediyoruz.em’in artı ve eksi olarak görülebilecek yani relative olaması başka bir elemente atanan değer üzerinden değer aldığı için relative oluyor ve bu durum da bazen artı bazen de eksi olarak karşımıza çıkabiliyor.
+
+**rem nedir nasıl çalışır:**
+
+rem’de em gibi bir ölçü biçimi

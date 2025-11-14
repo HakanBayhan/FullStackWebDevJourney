@@ -1,0 +1,53 @@
+body {
+  width: 700px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0%;
+}
+nav {
+  width: 700px;
+  border-style: solid;
+  background-color: #fff8d4;
+  border-radius: 30px;
+  padding: 1%;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+nav section a {
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  border-right-width: 7px;
+  border-right-color: black;
+  border-right-style: solid;
+  margin: 0;
+  padding: 6px;
+}
+
+.icerik {
+  border-color: black;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 5px;
+  margin: 3%;
+  width: 700px;
+  box-sizing: border-box;
+  padding: 2%;
+}
+#ilk {
+  border-left-style: solid;
+  border-left-width: 7px;
+  border-left-color: black;
+}
+#bir {
+  background-color: #bf1a1a;
+}
+#iki {
+  background-color: #ff6c0c;
+}
+#üc {
+  background-color: rgb(255, 224, 143);
+}
