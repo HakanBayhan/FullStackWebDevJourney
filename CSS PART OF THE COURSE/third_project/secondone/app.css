@@ -1,0 +1,29 @@
+div {
+  position: relative;
+  left: 40%;
+}
+
+.yuvarlak {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  transition: 1s;
+}
+.yuvarlak:hover {
+  background-color: blue;
+  border-radius: 0%;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  transition: 3s;
+  position: relative;
+}
+
+button:hover {
+  background-color: green;
+  left: 50px;
+}
