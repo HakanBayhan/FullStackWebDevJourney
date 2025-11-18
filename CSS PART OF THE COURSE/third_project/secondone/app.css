@@ -1,6 +1,10 @@
+body {
+  font-family: "Stack Sans Text", sans-serif;
+}
+
 div {
   position: relative;
-  left: 40%;
+  margin: 0 auto;
 }
 
 .yuvarlak {
@@ -19,11 +23,21 @@ button {
   width: 100px;
   height: 100px;
   background-color: cyan;
-  transition: 3s;
+  transition: 1s;
   position: relative;
 }
 
 button:hover {
   background-color: green;
-  left: 50px;
+  transform: translateY(-20px);
+}
+
+section {
+  width: 500px;
+  height: 500px;
+  background-image: url("https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg");
+  background-size: cover;
+  font-size: 50px;
+  margin: 0 auto;
+  background-repeat: none;
 }

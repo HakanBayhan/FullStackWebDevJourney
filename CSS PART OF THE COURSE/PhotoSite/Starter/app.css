@@ -1,0 +1,13 @@
+img {
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+}
+nav {
+  border-bottom: 2px solid #f1f1f1;
+  padding-top: 20px;
+  margin-left: 20px;
+  font-family: "Stack Sans Text", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
