@@ -1,0 +1,37 @@
+nav {
+  justify-content: center;
+}
+li ul {
+  display: inline;
+}
+
+li ul a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  transform: translateY(250px);
+}
+
+@media (max-width: 1500px) {
+  h1 {
+    color: yellow;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    color: cyan;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    color: purple;
+  }
+
+  li ul {
+    display: block;
+  }
+}

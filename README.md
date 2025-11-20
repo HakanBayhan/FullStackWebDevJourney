@@ -372,4 +372,80 @@ Tıpkı **Percentage** gibi ama em farklı çalışıyor.em parent elementinin b
 
 **rem nedir nasıl çalışır:**
 
-rem’de em gibi bir ölçü biçimi
+rem’de em gibi bir ölçü biçimi ve em’in aksine rem en üst element üzerinden hesap edilir bir üstteki root element değil en üstteki elementi root olarak kabul ediyor.
+
+## Section 9 :Other Assorted Useful CSS Properties
+
+**Opacity & The Alpha Channel:**
+
+Alpha değeri atayarak da opacity değeri atayarak da transparant hale getiriyoruz renklerimizin, yani rengin tonunu belirliyoruz.Ancak alpha değeri atayarak sadece bir değerin özelliğini değiştirirken opacity atayarak bütün elementlerin de renginin atamasını yapmış oluyoruz.
+
+**Position:**
+
+Static = Position da static değeri verdiğimiz zaman herhangi bir değişim gerçekleşmiyor.Yapılacak değişikliklerin de önüne geçmiş oluyor.
+
+Relative = Relative olarak atadığımız zaman posizsyonu normalde olduğu ve kapladığı alan üzerinden değişiklilerde bulunabiliyoruz.Örneğin 100 x , 120 y, ‘de pozisyonu bir div in onu 120 x, 120 y, haline getirmek için sağa doğru 20px götürebiliyoruz.
+
+Absolute = Absolute yaptığımız element en yakınındaki static olmayan değere doğru gidiyor.
+
+Sabit kalmasını istediğimiz navi barlar için de kullanılabilir.
+
+**Transitions:**
+
+transition’ a bir zaman değeri atıyoruz ve işlemin o süre zarfında gerçekleşmesini sağlıyor.örneğin:
+
+```
+.yuvarlak {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  transition: 1s;
+}
+```
+
+bu tarz farklı işlemler de yapabiliyoruz zamanla gerçekleşen soft olayların akışını sağlamamıza yarıyor.
+
+**Transform:**
+
+transformda bir sürü değişken var translate,scale veya rotate gibi bunları kullanarak değişikliliklerimizi yapıyoruz.
+
+**Background-Image:**
+
+arka plana fotoğraf-resim eklemek için background-image css rule’unu kullanıyoruz.background-size ile resmin büyüklüğünü değiştiriyoruz genellikle cover kullanılıyor belirlediğiniz alanı kaplaması amacıyla.background-repeate ile de resmin tekrar etmesini sağlıyoruz ama fazla kullanılan bir şey de değil zaten o yüzden kafamıza takmamıza gerek yok.Örnek olarak aşağıya bir kod bırakacağım nasıl yazıldığını vs hatırlamak amacıyla:
+
+`section{`
+
+`background-image: url(”görsel url’i”);`
+
+`background-size:cover;`
+
+`background-repeate:none;`
+
+`margin: 0 auto`
+
+`}`
+
+**Google Fonts:**
+
+google fonts ile bedava bir şekilde kolayca fontlarımızı kodumuza ekleyebiliyouz ve çok daha kullanışlı oluyor google fonts kullanmak.
+
+## Section 10:Responsive CSS & FlexBox
+
+**Flex Box:**
+
+displayi flexe atadığımızda contain edildiği yere otomatik sığıyor element.
+
+flex direction CSS rule’u ile ise nerden nereye doğru olması gerektiğini belirliyoruz.reverse diyebiliyoruz column diyebiliyoruz bunların amacı ise normalde default soldan sağa doğru sıralıyor olması flex direction ile yön belirlemiş oluyoruz.
+
+**Justify Content :**
+
+justify content ile içerik olan elementlerin rulelar ekleyerek durumlarını değiştiriyoruz sağdan sola yazan elementi soldan sağa yazdırmak veya padding margin eklemek gibi.
+
+**flex-direction:**
+
+flex’in varsa yönünü belirlemene yarıyor horizontal ise row vertical ise column kullanıyoruz.
+
+**Text -align :**
+
+text align vertical düzen ayarlaması yapıyor justify content horizontal contentin düzenlemesini yapıyor.
