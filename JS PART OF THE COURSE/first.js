@@ -69,4 +69,30 @@ const word = "skateboard";
 let facialHair = word.slice(5, 10).replace("o", "e");
 console.log(facialHair);
 
-//template literals
+//null value
+
+let loggedInUser = null;
+let unloggedUser = null;
+
+//math object
+Math.Pı; //3.14
+Math.round(3.7); //4
+Math.floor(3.7); //3
+Math.ceil(3.3); //4
+Math.random(); //0-1 arasında rastgele sayı
+
+//boolean logic
+1 > 2; //false
+2 >= 2; //true
+3 < 4; //true
+5 <= 4; //false
+3 == 3; //true
+4 != 4; //false
+
+//console.log
+console.log("Hello World"); //this is a log message
+console.warn("This is a warning"); //this is a warning message
+console.error("This is an error"); //this is an error message
+alert("This is an alert"); //opens a popup in browser
+prompt("What is your name?"); //opens a prompt in browser
+prompt("What is your age?", "18"); //opens a prompt with default value
