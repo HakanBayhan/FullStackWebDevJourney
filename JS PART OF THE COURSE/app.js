@@ -26,3 +26,35 @@ if (workDay === "monday") {
 } else {
   console.log("enjoy the weekend :D");
 }
+
+let phrase = "green";
+if (phrase.toLowerCase() === "stop") {
+  console.log("red");
+} else if (phrase.toLowerCase() === "slow") {
+  console.log("yellow");
+} else if (phrase.toLowerCase() === "go") {
+  console.log("green");
+} else {
+  console.log("purple");
+}
+
+//nested if else statements
+const age = 25;
+if (age >= 18) {
+  if (age <= 65) {
+    console.log("you are eligible to work");
+  } else {
+    console.log("you should be retired");
+  }
+} else {
+  console.log("you are not eligible to work");
+}
+
+//logical operators
+const hasDrivingLicense = true;
+const hasGoodVision = false;
+if (hasDrivingLicense && hasGoodVision) {
+  console.log("you are able to drive");
+} else {
+  console.log("someone else should drive");
+}
