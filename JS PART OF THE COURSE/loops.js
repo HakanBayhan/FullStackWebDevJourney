@@ -26,3 +26,20 @@ while (true) {
   console.log("While Loop with Break num: " + num);
   num++;
 }
+
+//for of
+const fruits = ["apple", "banana", "cherry"];
+
+for (let fruit of fruits) {
+  console.log("Fruit im going to eat today: " + fruit);
+}
+
+//for with objects
+const person = {
+  name: "Alice",
+  age: 30,
+  city: "New York",
+};
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
