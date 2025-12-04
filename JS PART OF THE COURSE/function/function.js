@@ -133,3 +133,91 @@ const hen = {
     return "EGG";
   },
 };
+
+//Try Catch
+try {
+  hello.toUpperCase();
+} catch {
+  console.log("ERRORRRR");
+}
+
+//foreach
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function (el) {
+  console.log(el * el);
+});
+
+//map
+const doubles = numbers.map(function (el) {
+  return el * 2;
+});
+console.log(doubles);
+//course question answer
+
+const firstNames = fullNames.map(function (fullName) {
+  console.log(fullName.first);
+});
+
+//arrow functions
+const add = (x,y) => {
+  return x + y;
+};
+const mutliply = (x,y) =>{
+  return x * y
+};
+const nevermindnumber = (mi, mo) => {
+  return mi + (mo * 2) - 10 * 5;
+}
+
+//course question answer
+const greet = (firstname) =>{
+  return "Hey " + firstname + "!";
+}
+
+//setInterval
+const id = setInterval(() => {
+  console.log("HELLO");
+}, 5000);
+
+//course question answer
+
+const usernames = ["hakan", "SLŞDGMŞSLDAGŞLŞSDAMGŞLSDG"];
+
+function validUserNames(usernames) {
+  return usernames.filter((n) => n.length < 10);
+}
+validUserNames();
+
+//every method
+const mosts = ["75","80","90","80",]
+
+mosts.every(most => most >= 75)
+
+//some method 
+const sayılar = ["10","100","1000"]
+
+sayılar.every(sayı => sayı <= 10)
+
+//course question answer 
+function allEvens(xs){
+   return xs.every(x => x % 2 == 0)
+}
+
+//reduce method 
+
+const prices = [
+  "9.99",
+  "1.50",
+  "19.90",
+  "49.99",
+  "30.50"
+];
+
+const total = prices.reduce((total,price) => {
+  return total + price
+})
+
+
+
+
+
